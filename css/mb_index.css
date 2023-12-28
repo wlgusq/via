@@ -1,0 +1,444 @@
+@charset "utf-8";
+
+html{scroll-behavior: smooth;}
+
+body{
+  background-color: #fffcf5;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+/* header */
+header{
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0px;left: 0px;
+  border-bottom: 1px solid #efefef;
+  z-index: 9999;
+  background-color: #fffcf5;
+}
+header .fa-bars{
+  font-size: 1.5rem;
+  float: left;
+  cursor: pointer;
+  position: absolute;
+  left: 20px; top: 18px;
+}
+header > h1{
+  text-align: center;
+}
+header > h1 > a{
+  display: block;
+}
+header > h1 > a > img{
+  width: 85px;
+  padding-top: 10px;
+}
+header > .lang{
+  width: 23px; height: 23px;
+  position: absolute;
+  right: 20px; top: 18px;
+}
+
+/* 내비게이션 */
+/* .gnb_wrap{transition: 0.5s;} */
+.gnb{
+  height: 100%; width: 100%;
+  top: 60px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* border-bottom-right-radius: 50px; */
+  text-indent: 15px;
+  right: 100%;
+  z-index: 10;
+  transition: 0.5s;
+}
+.gnb .fa-close{
+  font-size: 2rem;
+  color:#fff;
+  position: absolute;
+  right: 20px; top: 10px;
+}
+.gnb > ul{
+  height: 100%; width: 70%;
+  background: #fffcf5;
+  /* margin-top: 15px; */
+  border-top: 1px solid rgba(225,225,225,.6);
+  position: relative;
+
+}
+.gnb > ul > li{
+  font-size: 15px;
+  line-height: 50px;
+  border-bottom: 1px solid rgba(225,225,225,.6);
+}
+#toggle:checked ~ .gnb{right: 0%;}
+#toggle,#sub1, #sub2{
+  display: none;
+}
+.gnb > ul > li > label{
+  padding: 1.5% 60% 1.5% 0;}
+.sub{
+  background-color: rgba(0, 0, 0, 0.027);
+  text-indent: 25px;
+  display: none;
+}
+.sub > li{
+  border-bottom: 1px solid rgba(225,225,225,.2);
+}
+.gnb > ul > li > .sub > li > a{
+  font-size: 13px;
+}
+.fa-caret-down{
+  color: #999;
+}
+#sub1:checked + .sub{display: block;}
+#sub2:checked + .sub{display: block;}
+
+.n_sns{
+  position: fixed;
+  text-indent: 25px;
+  transform: translateY(400px);
+}
+.n_sns > a > i{
+  font-size: 25px;
+  color: #777;
+}
+
+
+
+
+/* main */
+main{
+  width: 100%;
+  padding-top: 60px;
+  overflow: hidden;
+}
+main > h2{display: none;}
+
+
+/* 검색 */
+fieldset{
+  width: 90%;
+  background-color: #97AF8F;
+  border: none;
+  border-radius: 5px;
+  margin: 15px auto;
+  box-shadow: 0px 0px 10px 1px #ccc;
+}
+fieldset > legend{display: none;}
+fieldset > input[type=search]{
+  background-color: #97AF8F;
+  /* background-color: #ff0; */
+  border: none;
+  border-radius: 5px;
+  padding: 7px 30px 5px 0px;
+  margin: 5px 0px 0px 0px;
+  /* transform: translateY(-1px); */
+}
+.fa-search{
+  padding: 12px 7px 12px 15px;
+  color: #71856a;
+  /* transform: translateY(0px); */
+}
+fieldset > input[type=search]::placeholder{
+  color: #71856a;
+  font-size: 1rem;
+  transform: translateY(-1px);
+}
+
+
+/* 메뉴 */
+#t_gnb{
+  width: 90%;
+  /* display: flex;
+  justify-content: space-between; */
+  margin: 0px auto 0px auto; 
+  text-align: center;
+}
+#t_gnb > li{
+  text-align: center;
+  display: inline-block;
+  margin: 0px 2px;
+}
+#t_gnb > li > a{
+  /* border: 1px solid #ccc; */
+  display: inline-block;
+  width: 50px;
+  box-shadow: 0px 0px 2px 1px #efefef;
+  border-radius: 30px;
+  padding: 8px 13px 5px 13px;
+  font-size: 0.75rem;
+  background: #fff;
+}
+#t_gnb > li > a:hover{
+  background-color: #97AF8F;
+  color: #fff;
+}
+
+
+/* 메인 사진 */
+.main_img{
+  width: 90%;
+  margin: 25px auto;
+  position: relative;
+}
+.main_img > h2{display: none;}
+.first > a > h3{
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  top: 30px;left: 25px;
+}
+.first > a > p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #fff;
+  position: absolute;
+  top: 60px;left: 25px;
+}
+.first > a > span{
+  font-size: 13px;
+  background: rgba(255,255,255,.6);
+  padding: 12px 65px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 40px;left: 50%;
+  transform: translateX(-70%);
+}
+.first > a > img{
+  width: 100%;
+  border-radius: 10px;
+}
+/* .swiper-slide{opacity: 1 !important;} */
+
+
+
+/* 찜하기 버튼 */
+.heart{
+  display:inline-block;
+  width:28px;height:26px;
+  background-image:url('../img/index_img/heart_empty.png');
+  background-size: 28px 26px;
+  text-indent:-9999px;
+  position: absolute;
+  right: 100px; bottom: 45px;
+}
+#toggle1{display:none;}
+#toggle1:checked+label{
+  background-image:url('../img/index_img/heart_red.png');
+}
+#toggle2{display:none;}
+#toggle2:checked+label{
+  background-image:url('../img/index_img/heart_red.png');
+}
+#toggle3{display:none;}
+#toggle3:checked+label{
+  background-image:url('../img/index_img/heart_red.png');
+}
+#toggle4{display:none;}
+#toggle4:checked+label{
+  background-image:url('../img/index_img/heart_red.png');
+}
+#toggle5{display:none;}
+#toggle5:checked+label{
+  background-image:url('../img/index_img/heart_red.png');
+}
+
+
+
+/* article 공통서식 */
+.best_wrapper,.kc_wrapper,.review_wrapper{
+  margin: 50px auto 50px auto;
+  width: 90%;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px #efefef;
+  position: relative;
+  overflow: hidden;
+  }
+.art_title{
+  display: flex;
+  margin: 15px 0px;
+}
+.art_title > h2{
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  /* border-bottom: 3px solid #71856a; */
+  /* text-indent: 20px; */
+  background: linear-gradient(to top, rgba(151,176,143,0.7) 25%, transparent 50%);
+}
+.art_title > .more{
+  color: #777;
+  font-weight: 300;
+  font-size: 14px;
+  /* margin-bottom: 10px; */
+  right: 25px;
+  /* float: right; */
+  position: absolute;
+  /* padding-left: 23%; */
+}
+
+
+/* 인기 여행지 BEST 10 */
+.best > img{
+  width: 140px; height: 140px;
+  border-radius: 10px;
+  position: relative;
+  margin: 0px 7px;
+}
+.best_wrap{
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 10px;
+  /* flex-wrap: wrap; */
+}
+
+
+/* K-콘텐츠 여행 */
+.left_btn, .right_btn{transform: translateY(145px);}
+.left_btn{float: left;}
+.right_btn{float: right;}
+.left_btn > img, .right_btn > img{
+  width: 40px;
+}
+.kc_wrap{
+  width: 400%;
+  display: flex;
+}
+.kc_wrap > li{
+  width: 100%;
+  text-align: center;
+  padding: 0px 23px;
+  margin-bottom: 15px;
+  transform: translateY(-25px);
+}
+.kc_wrap > li > a > img{
+  width: 249px;
+  border-radius: 50%;
+  margin: 15px 0px;
+}
+.kc_wrap > li > a > h3{
+  font-size: 16px;
+}
+.kc_wrap > li > a > i > span{
+  font-size: 12px;
+  line-height: 50px;
+  color: #777;
+  font-weight: 500;
+}
+.kc_wrap a > .fa-location-dot{
+  color: #97AF8F;
+}
+.kc_wrap > li > a > p{
+  font-size: 13px;
+  line-height: 17px;
+}
+
+
+/* 지역별 국내 여행 */
+.loc_wrapper{
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 20px auto;
+  width: 90%; 
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px #ccc;
+}
+.loc{padding: 15px 15px 0px 15px;}
+.swiper-wrapper{
+  width: 300%;
+  display: flex;
+}
+.swiper-wrapper > div{
+  width: 100%;
+  text-align: center;
+  padding: 0px 55px 0px 0px;
+  margin-bottom: 20px;
+}
+.swiper-slide{opacity: 1;}
+.swiper-slide > a{
+  width: 100%;
+  display: flex;
+}
+.swiper-slide > a > img{
+  width: 100%;
+}
+.swiper-pagination{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-40%) !important;
+}
+
+
+/* 여행지 리뷰 */
+.review_wrapper{margin-bottom: 80px;}
+.review_wrap > li{
+  text-align: center;
+  padding: 0px 55px 0px 0px;
+  margin-bottom: 30px;
+  /* background-color: #f0f; */
+  position: relative;
+}
+.review_wrap > li > a{
+  width:350px; 
+  display: flex;
+}
+.review_wrap > li > a > img{
+  width: 115px; height: 115px;
+  border-radius: 10px;
+}
+.review_wrap > li > a > div{
+  width: 185px;
+  text-align: left;
+  margin-left: 10px;
+  position: absolute;
+  right: 0px;
+  background-color: #fff;
+}
+.review_wrap > li > a > div > .hashtag{
+  background: #f3f6f6;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+.review_wrap > li > a > div > h3{
+  font-size: 15px;
+  line-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;
+}
+.review_wrap > li > a > div > p{
+  font-size: 12px;
+  line-height: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+}
+.review_wrap > li > a > div > span{
+  color: #777;
+  font-size: 12px;
+}
+.review_wrap > li > a > div > span:last-child{
+  /* background-color: #222; */
+  text-align: right;
+  line-height: 30px;
+  position: absolute;
+  right: 0px;
+}
+.review_wrap > li > a > div > span:last-child > i{
+  color: #ccc;
+}
+.review_wrap > li:first-child > a > div > span:last-child > i{
+  color: #f00;
+}
+
+
+

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIA(visit korea)_마이페이지</title>
+      <!-- 1. 여백초기화 -->
+      <link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+      <!-- 2. 공통서식 (메인, 서브, 로그인, 회원가입)-->
+      <link href="./css/base.css" rel="stylesheet" type="text/css">
+
+      <!-- 3. 레이아웃--> 
+      <link href="./css/mb_layout.css" rel="stylesheet" type="text/css">        
+
+      <!-- 4. 메인 페이지 서식 --> 
+      <link href="./css/mb_mypage.css" rel="stylesheet" type="text/css">
+
+      <!-- 5. 아이콘폰트 주소 -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
+
+</head>
+
+    <body>
+      <!-- header -->
+      <header>
+        <h1>
+          <a href="mb_index.html" title="메인 페이지 바로가기">
+            <img src="./img/index_img/logo.png" alt="via 로고">
+          </a>
+        </h1>
+
+        <!-- 언어 -->
+        <img class="lang" src="./img/index_img/language.png" alt="언어 변경">
+
+  </header>
+
+
+
+
+
+
+  <!-- main -->
+  <main>
+  <!-- 프로필 -->
+    <ul class="my_profile">
+      <li>
+        <img src="./img/mypage_img/profile.png" alt="프로필 보기">
+      </li>
+      <li>
+        <h2>김나나 <span>님</span></h2>
+        <p>VIA와 함께 행복한 여행하길 바래요</p>
+        <a href="#" title="프로필 변경하기">
+          <span>프로필 변경하기</span>
+        </a>
+      </li>
+    </ul>
+
+  <!-- 쿠폰 & 리뷰 -->
+  <div class="cnr_wrapper">
+    <ul class="cnr">
+      <li>쿠폰</li>
+      <li><span>3</span> 개</li>
+    </ul>
+    <ul class="cnr">
+      <li>리뷰</li>
+      <li>리뷰 작성하기</li>
+    </ul>
+  </div>
+
+  <!-- 여행 -->
+    <ul class="trip">
+      <li>
+        <i class="fas fa-calendar-day"> 예정된 여행</i>
+        <p>예정된 여행이 없습니다.</p>
+      </li>
+      <li>
+        <i class="fas fa-calendar-check"> 완료된 여행</i>
+        <p>완료된 여행이 없습니다.</p>
+      </li>
+    </ul>
+  
+  <!-- 문의 현황 -->
+    <ul class="qna">
+      <li><i class="fas fa-headset"> 문의 현황</i></li>
+
+      <li>
+        <ul class="qna_inner">
+          <li><a href="#" title="1 : 1 문의">1 : 1 문의</a></li>
+          <li><a href="#" title="Q & A">Q & A</a></li>
+          <li><a href="#" title="상담 챗봇">상담 챗봇</a></li>
+        </ul>
+      </li>
+
+      <li><a href="mb_login.html" title="상담 챗봇">로그아웃</a></li>
+    </ul>
+
+    <!-- 메인 푸터 -->
+    <div class="main_footer">
+      <ul class="mf">
+        <li><a href="#" title="이용약관">이용약관</a></li>
+        <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+        <li><a href="#" title="청소년보호방침">청소년보호방침</a></li>
+        <li><a href="#" title="법적고지">법적고지</a></li>
+      </ul>
+
+      <h4>비아 VIA (주)</h4>
+
+      <ul class="sns">
+        <li>
+          <a href="https://www.instagram.com/" title="인스타그램 바로가기">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/" title="페이스북 바로가기">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" title="유튜브 바로가기">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" title="트위터 바로가기">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+  <!-- 하단 내비게이션 -->
+  <footer>
+    <ul class="f_lnb">
+      <li>   
+        <a href="mb_index.html" title="홈">
+          <i class="fas fa-home"><span>HOME</span></i>
+        </a>
+      </li>
+      <li>   
+        <a href="#" title="검색">
+          <i class="fas fa-magnifying-glass"><span>SEARCH</span></i>
+        </a>
+      </li>
+      <li>   
+        <a href="#" title="플러스">
+          <i class="fas fa-circle-plus"></i>
+        </a>
+      </li>
+      <li>   
+        <a href="#" title="찜">
+          <i class="fas fa-heart"><span>LIKE</span></i>
+        </a>
+      </li>
+      <li>   
+        <a href="#" title="마이">
+          <i class="fas fa-user-large"><span>MY</span></i>
+        </a>
+      </li>
+    </ul>
+
+  <!-- TOP 버튼 -->
+  <a class="t_btn" href="#" title="맨 위로 가기">
+    <img src="./img/index_img/icon_top.png" alt="맨 위로 가기">
+  </a>
+
+  </footer>

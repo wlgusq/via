@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIA</title>
+  <!-- 초기화 -->
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+
+  <!-- 기본 폰트 -->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+
+  <!-- 회원가입2 서식 -->
+  <link href="./css/mb_join02.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <div class="top">
+    <h2>회원가입</h2>
+    <a href="mb_join.html " title="회원가입 돌아가기">
+      <img src="./img/login_img/back_btn_black.png" alt="뒤로가기">
+    </a>
+  </div>
+
+  <!-- <form action="join.php" method="post" name="프로필 설정">
+    <fieldset>
+      <legend>개인정보를 입력해주세요.</legend>
+      <table>
+        <tr>
+          <td class="profile_img">
+            <a href="#" title="프로필 이미지 선택하기">
+              <img src="./img/user_m.png" alt="남성이미지" class="user_man">
+              <img src="./img/user_w.png" alt="여성이미지" class="user_women">
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th>이름</th>
+          <td colspan="2">
+            <input type="text" value="이름을 입력해주세요" maxlength="16" required>
+          </td>
+        </tr>
+
+        <tr>
+          <th>성별</th>
+          <td>
+            <input type="radio" name="gender" id="gender01" value="남성">
+            <label for="gender01">남성</label>
+          </td>
+          <td>
+            <input type="radio" name="gender" id="gender02" value="여성">
+            <label for="gender02">여성</label>
+          </td>
+        </tr>
+
+        <tr>
+          <th>전화번호</th>
+          <td colspan="2">
+            <input type="text" value="010-1234-5678" maxlength="11" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2"><input type="submit" value="시작하기"></td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+ -->
+
+<!-- 목록 태그로 만든거 -->
+  <form action="join.php" method="post" name="프로필 설정">
+    <fieldset>
+      <legend>개인정보를 입력해주세요.</legend>
+
+      <input type="radio" name="gender" id="gender01" value="남성" required>
+
+        <input type="radio" name="gender" id="gender02" value="여성" required>
+
+        <div class="profile_img">
+        <ul>
+          <li>
+            <a href="#" title="프로필 이미지 선택하기">
+              <img src="./img/login_img/user_m.png" alt="남성이미지" class="user_man">
+            </a>
+          </li>
+          <li>
+            <a href="#" title="프로필 이미지 선택하기">
+              <img src="./img/login_img/user_w.png" alt="여성이미지" class="user_women">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class=name_box>
+        <ul>
+          <li>이름</li>
+          <li><input type="text" placeholder=" 이름을 입력해주세요" maxlength="16" required id="name"></li>
+        </ul>
+      </div>
+
+      <div class="gender_choice">
+        <span class="gen_txt">성별</span>
+        <ul>
+          <li>
+            <!-- <input type="radio" name="gender" id="gender01" value="남성" required> -->
+            <label for="gender01">남성</label>
+          </li>
+          <li class="txt_form">
+            <!-- <input type="radio" name="gender" id="gender02" value="여성" required> -->
+            <label for="gender02">여성</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="phone_box">
+        <ul>
+          <li>전화번호</li>
+          <li><input type="text" placeholder=" 010-1234-5678" maxlength="11" required></li>
+        </ul>
+      </div>
+
+    
+      <!-- <div class="submit_box">
+        <a href="mb_login.html" title="로그인하러가기">
+          <input type="submit" value="시작하기">
+        </a>
+      </div> -->
+
+      <div class="submit_box">
+        <a href="mb_login.html" title="로그인하러가기">시작하기</a>
+      </div>
+    
+    </fieldset>
+  </form>
+</body>
+</html>

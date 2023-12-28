@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIA</title>
+  <!--1. 초기화 -->
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+
+  <!-- 2. 폰트 서식 -->
+  <link rel="stylesheet" href="./css/base.css" type="text/css">
+
+  <!-- 3. 회원가입 서식 -->
+  <link rel="stylesheet" href="./css/mb_join.css" type="text/css">
+</head>
+<body>
+  <main>
+  <div class="top">
+    <h2>회원가입</h2>
+    <a href="mb_intro.html" title="인트로 페이지 바로가기">
+      <img src="./img/login_img/back_btn_black.png" alt="뒤로가기">
+    </a>
+  </div>
+
+  <div class="bottom">
+    <form action="join.php" method="post" name="회원가입" >
+    <fieldset>
+      <legend>회원가입</legend>
+    <ul>
+      <li>
+      <label for="id_txt">아이디</label>
+        <input type="text" id="id_txt" placeholder=" 아이디" maxlength="16" required>
+      </li>
+
+      <li>
+        <label for="id_txt">비밀번호</label>
+        <input type="text" id="pw_txt" placeholder=" 비밀번호" maxlength="16" required>
+      </li>
+
+      <li>
+        <!-- <a href="mb_join_profile.html" title="회원가입 프로필 설정">
+          <input type="submit" value="회원가입">
+        </a> -->
+        <a href="mb_join02.html" title="회원가입 프로필 설정"> 회원가입</a>
+      </li>
+    </ul>
+    </fieldset>
+  </form>
+
+  <article>
+    <h3><span class="back">&nbsp;간편 회원가입&nbsp;</span> </h3>
+    <ul>
+      <li>
+        <a href="naver_join.html" title="네이버 회원가입 바로가기">
+          <img src="./img/login_img/m_naver.png" alt="네이버 아이콘">
+        </a>
+      </li>
+
+      <li>
+        <a href="google_join.html" title="구글 회원가입 바로가기">
+          <img src="./img/login_img/m_google.png" alt="구글 아이콘">
+        </a>
+      </li>
+
+      <li>
+        <a href="instagram_join.html" title="인스타그램 회원가입 바로가기">
+          <img src="./img/login_img/m_insta.png" alt="인스타그램 아이콘">
+        </a>
+      </li>
+
+      <li>
+        <a href="apple_join.html" title="애플 회원가입 바로가기">
+          <img src="./img/login_img/m_apple.png" alt="애플 아이콘">
+        </a>
+      </li>
+    </ul>
+  </article>
+
+<a href="mb_login.html" title="로그인 페이지 바로가기" class="login_btn">회원이신가요? <span>로그인</span></a>
+</div>
+</main>
+</body>
+</html>

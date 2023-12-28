@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/* 회원가입 페이지 레이아웃 */
+form, label, input{margin: 0px; padding: 0px;}
+ul, li{list-style: none; padding: 0px; margin: 0px;} 
+body, form, fieldset{padding: 0px; margin: 0px;}
+
+body{
+  background: #FFFCF8;
+}
+main{
+  position: relative;
+}
+.top{
+  width: 100%;
+  margin: 10% 0;
+  position: relative;
+
+}
+
+.top > h2{
+  font-size: 2rem;
+  text-align: center;
+  line-height: 100%;
+}
+
+.top > a{
+position: absolute;
+left: 7%; top: 5%;
+}
+
+.top > a > img{
+  width: 50%;
+  }
+
+form legend, label{
+  display: none;
+}
+
+.bottom{
+  position: absolute;
+  width: 100%;
+  top: 40vh; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+fieldset{
+  width: 100%;
+  text-align: center;
+  margin:50px 0px 63px 0px;
+}
+
+form ul{width: 100%;}
+
+form ul > li > input{
+  width: 61.5%; height: 48px;
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+form ul > li:nth-child(2){
+  margin:15px 0px ;
+}
+
+form ul> li:last-child{
+  margin: 0 auto;
+  width: 62%;
+  background: #97AF8F;
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 50px;
+}
+
+form ul> li:last-child > a{
+  color: #fff;
+  display: block;
+  height: 50px;
+}
+
+
+/* 간편 회원가입 */
+article{
+  width: 100%;
+  text-align: center;
+
+}
+
+article > h3{ 
+  position: relative;
+  width: 61.5%;
+  margin: 0px auto;
+  font-size: 0.9rem;
+}
+
+.back{
+  background: #FFFCF8;
+  position: relative; z-index: 10;
+  padding: 0 10px;
+}
+
+article > h3:before, article > h3:after{
+  content: "";
+  display: block;
+  width: 100%; height: 1px;
+  background-color: #333;
+  position: absolute;
+  top: 5px;
+}
+
+article > ul{
+  display: flex;
+  width: 61.5%;
+  margin: 0 auto;}
+
+article > ul > li{
+  width: 22%;
+  padding: 33px 4% 60px 0;
+}
+
+article > ul > li:last-child{
+  padding: 33px 0 60px 0;
+}
+
+article > ul > li >a{
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+article > ul> li > a > img{
+  width: 100%;
+}
+
+.login_btn{
+font-size: 0.9rem;
+display: block;
+text-align: center;
+}
+
+.login_btn > span{
+font-size: 0.95rem;
+font-weight: 700;
+}

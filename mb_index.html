@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIA(visit korea)</title>
+      <!-- 파비콘 이미지 삽입하기 -->
+      <link href="./img/favicon.ico" type="image/x-icon" rel="shortcut icon">
+
+      <!-- 1. 여백초기화 -->
+      <link href="./css/reset.css" rel="stylesheet" type="text/css">
+
+      <!-- 2. 공통서식 (메인, 서브, 로그인, 회원가입)-->
+      <link href="./css/base.css" rel="stylesheet" type="text/css">
+
+      <!-- 3. 레이아웃--> 
+      <link href="./css/mb_layout.css" rel="stylesheet" type="text/css">        
+
+      <!-- 4. 메인 페이지 서식 --> 
+      <link href="./css/mb_index.css" rel="stylesheet" type="text/css">
+
+      <!-- 5. 아이콘폰트 주소 -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
+
+      <!-- 스와이퍼 슬라이드 서식 -->
+      <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+
+      <!-- 6. 슬라이드 제이쿼리 스크립트 -->
+      <script src="./script/swiper.js"></script>
+
+      <!-- 7. 제이쿼리 -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+
+          $(window).scroll(function(){
+            let sPos = $(this).scrollTop();
+
+            if(sPos >=300){
+              $('.t_btn').fadeIn();
+            }else{
+              $('.t_btn').fadeOut();
+            }
+
+          });
+
+          $('.t_btn').click(function(){
+            $('html, body').animate({scrollTop:'0px'},300);
+            return false;
+          });
+
+        });
+      </script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <h1>
+      <a href="mb_index.html" title="메인 페이지 바로가기">
+        <img src="./img/index_img/logo.png" alt="via 로고">
+      </a>
+    </h1>
+    <label for="toggle"><i class="fas fa-bars"></i></label>
+    <input type="checkbox" id="toggle">
+    <!-- 메뉴바 -->
+      <nav class="gnb">
+        <label for="toggle"><i class="fas fa-close"></i></label>
+
+        <ul>
+          <li>
+            <span>인기여행지</span>
+          </li>
+          <li>
+            <span>K-content</span>
+          </li>
+          <li>
+            <label for="sub1">지역여행
+              <i class="fas fa-caret-down"></i>
+            </label>
+            <input type="checkbox" id="sub1">
+            <ul class="sub">
+              <li><a href="#" title="서울">서울</a></li>
+              <li><a href="#" title="경기">경기</a></li>
+              <li><a href="#" title="강원">강원</a></li>
+              <li><a href="#" title="충청">충청</a></li>
+              <li><a href="#" title="경상">경상</a></li>
+              <li><a href="#" title="전라">전라</a></li>
+              <li><a href="#" title="제주">제주</a></li>
+            </ul>
+          </li>
+          <li>
+            <label for="sub2">예약
+              <i class="fas fa-caret-down"></i>
+            </label>
+            <input type="checkbox" id="sub2">
+            <ul class="sub">
+              <li><a href="#" title="렌터카/교통">렌터카/교통</a></li>
+              <li><a href="#" title="숙소">숙소</a></li>
+              <li><a href="#" title="티켓">티켓</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>여행지 리뷰</span>
+          </li>
+          <li>
+            <span>내 여행</span>
+          </li>
+        </ul>
+        </nav>
+    <!-- 로고 -->
+
+    <!-- 언어 -->
+    <img class="lang" src="./img/index_img/language.png" alt="언어 변경">
+
+  </header>
+
+
+
+
+
+
+  <!-- main -->
+  <main>
+    <h2>메인페이지</h2>
+
+    <!-- 검색 & 메뉴 -->
+    <fieldset>
+      <legend>검색</legend>
+      <i class="fas fa-search"></i> 
+      <input type="search" placeholder="드라마, 지역, 축제 검색" maxlength="25">
+    </fieldset>
+      <ul id="t_gnb">
+        <li><a href="#" title="인기 여행지 BEST 10">인기</a></li>
+        <li><a href="#" title="K-콘텐츠 여행">K-콘텐츠</a></li>
+        <li><a href="#" title="지역별 국내 여행">지역</a></li>
+        <li><a href="#" title="여행지 리뷰">리뷰</a></li>
+      </ul>
+
+    <!-- 메인 사진 -->
+    <article class="main_img">
+      <h2>메인 사진</h2>
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide first">
+            <a href="#" title="전주 한옥마을 바로가기">
+              <img src="./img/index_img/scroll1.png" alt="전주 한옥마을">
+              <h3>전주</h3><p>한옥마을</p>
+              <span>둘러보기</span>
+            </a>
+            <input type="checkbox" id="toggle1">
+            <label for="toggle1" class="heart">찜하기</label>
+          </div>
+          <div class="swiper-slide first">
+            <a href="#" title="서울 잠실롯데타워 바로가기">
+              <img src="./img/index_img/scroll2.png" alt="서울 잠실롯데타워">
+              <h3>서울</h3><p>잠실롯데타워</p>
+              <span>둘러보기</span>
+            </a>
+            <input type="checkbox" id="toggle2">
+            <label for="toggle2" class="heart">찜하기</label>
+          </div>
+          <div class="swiper-slide first">
+            <a href="#" title="강릉 썬크루즈 리조트 바로가기">
+              <img src="./img/index_img/scroll3.png" alt="강릉 썬크루즈 리조트">
+              <h3>강릉</h3><p>썬크루즈리조트</p>
+              <span>둘러보기</span>
+            </a>
+            <input type="checkbox" id="toggle3">
+            <label for="toggle3" class="heart">찜하기</label>
+          </div>
+          <div class="swiper-slide first">
+            <a href="#" title="서울 경복궁 바로가기">
+              <img src="./img/index_img/scroll4.png" alt="서울 경복궁 사거리">
+              <h3>서울</h3><p>경복궁사거리</p>
+              <span>둘러보기</span>
+            </a>
+            <input type="checkbox" id="toggle4">
+            <label for="toggle4" class="heart">찜하기</label>
+          </div>
+          <div class="swiper-slide first">
+            <a href="#" title="부산 감천문화마을 바로가기">
+              <img src="./img/index_img/scroll5.png" alt="부산 감천문화마을">
+              <h3>부산</h3><p>감천문화마을</p>
+              <span>둘러보기</span>
+            </a>              
+            <input type="checkbox" id="toggle5">
+            <label for="toggle5" class="heart">찜하기</label>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+
+
+
+    <!-- 인기 여행지 BEST 10 -->
+    <article class="best_wrapper">
+      <div class="art_title">
+        <h2>인기 여행지 BEST 10</h2>
+        <a class="more" href="#" title="인기 여행지 더보기">
+          더보기 <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <ul class="best_wrap">
+        <li>
+          <a class="best" href="#" title="인기 여행지 best 1">
+            <img src="./img/index_img/Top1.png" alt="인기 여행지 best 1">
+          </a>
+        </li>
+        <li>
+          <a class="best" href="#" title="인기 여행지 best 3">
+            <img src="./img/index_img/Top3.png" alt="인기 여행지 best 3">
+          </a>
+        </li>
+        <li>
+          <a class="best" href="#" title="인기 여행지 best 5">
+            <img src="./img/index_img/Top5.png" alt="인기 여행지 best 5">
+          </a>
+        </li>
+        <li>
+          <a class="best" href="#" title="인기 여행지 best 7">
+            <img src="./img/index_img/Top7.png" alt="인기 여행지 best 7">
+          </a>
+        </li>
+        <li>
+          <a class="best" href="#" title="인기 여행지 best 9">
+            <img src="./img/index_img/Top9.png" alt="인기 여행지 best 9">
+          </a>
+        </li>
+        </ul>
+      <ul class="best_wrap">
+      <li>
+          <a class="best" href="#" title="인기 여행지 best 2">
+            <img src="./img/index_img/Top2.png" alt="인기 여행지 best 2">
+          </a>
+        </li>
+        <li>
+          <a class="best" href="#" title="인기 여행지 best 4">
+            <img src="./img/index_img/Top4.png" alt="인기 여행지 best 4">
+          </a>
+        </li>
+        <li>
+          <a class="best" href="#" title="인기 여행지 best 6">
+            <img src="./img/index_img/Top6.png" alt="인기 여행지 best 6">
+          </a>
+        </li>
+        <li>
+          <a class="best" href="#" title="인기 여행지 best 8">
+            <img src="./img/index_img/Top8.png" alt="인기 여행지 best 8">
+          </a>
+        </li>
+        <li>
+          <a class="best" href="#" title="인기 여행지 best 10">
+            <img src="./img/index_img/Top10.png" alt="인기 여행지 best 10">
+          </a>
+        </li>
+      </ul>
+    </article>
+
+    <!-- K-콘텐츠 여행 -->
+    <article class="kc_wrapper">
+      <div class="art_title">
+        <h2>K-콘텐츠 여행</h2>
+        <a class="more" href="./m_sub_main.html" title="인기 여행지 더보기">
+          더보기 <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <a href="#" title="왼쪽 콘텐츠" class="left_btn">
+        <img src="./img/index_img/btn_left.png" alt="왼쪽 콘텐츠">
+      </a>
+      <a href="#" title="오른쪽 콘텐츠" class="right_btn">
+        <img src="./img/index_img/btn_right.png" alt="오른쪽 콘텐츠">
+      </a>
+      <ul class="kc_wrap">
+        <li>
+          <a href="./m_sub_drama_1.html" title="그 해 우리는 바로가기">
+            <img src="./img/index_img/drama4.png" alt="그 해 우리는 바로가기">
+            <h3>그 해 우리는</h3>
+            <i class="fas fa-location-dot"><span>&nbsp;수원 행궁동</span></i>
+            <p><i class="fas fa-quote-left"></i> &nbsp;
+              우리가 헤어진 건 다 내 오만이었어</p>
+            <p>너 없이 살 수 있을 거라는 내 오만 &nbsp;
+              <i class="fas fa-quote-right"></i></p>
+          </a>
+        </li>
+        <li>
+          <a href="./m_sub_main.html" title="2521 바로가기">
+            <img src="./img/index_img/drama1.png" alt="2521 바로가기">
+            <h3>스물다섯 스물하나</h3>
+            <i class="fas fa-location-dot"><span>&nbsp;수원 행리단길</span></i>
+            <p><i class="fas fa-quote-left"></i> &nbsp;
+              네가 어디에 있든,</p> <p>네가 있는 곳에 내 응원이 닿게 할게</p>
+            <p>내가 가서 닿을게, 그때 보자 &nbsp;
+              <i class="fas fa-quote-right"></i></p>
+          </a>
+        </li>
+        <li>
+          <a href="./m_sub_main.html" title="뉴진스 바로가기">
+            <img src="./img/index_img/drama2.png" alt="뉴진스 바로가기">
+            <h3>Ditto / OMG</h3>
+            <i class="fas fa-location-dot"><span>&nbsp;계성중학교</span></i>
+            <p>뉴진스</p>
+          </a>
+        </li>
+        <li>
+          <a href="./m_sub_main.html" title="사랑의 불시착 바로가기">
+            <img src="./img/index_img/drama3.png" alt="사랑의 불시착 바로가기">
+            <h3>사랑의 불시착</h3>
+            <i class="fas fa-location-dot"><span>&nbsp;제주 치유의 숲</span></i>
+            <p><i class="fas fa-quote-left"></i> 
+              &nbsp;잘못 탄 기차가 때론</p>
+              <p>목적지에 데려다준다 &nbsp;
+              <i class="fas fa-quote-right"></i></p>
+          </a>
+        </li>
+      </ul>
+    </article>
+
+    <!-- 지역별 국내여행 -->
+          <article class="loc_wrapper">
+            <div class="art_title loc">
+              <h2>지역별 국내여행</h2>
+              <a class="more" href="./m_sub_location.html" title="인기 여행지 더보기">
+                더보기 <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="./m_sub_location.html" title="서울 핫플 모음 바로가기">
+                    <img src="./img/index_img/loc1.png" alt="서울 핫플 모음 바로가기">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./m_sub_location.html" title="제주 핫플 모음 바로가기">
+                    <img src="./img/index_img/loc2.png" alt="제주 핫플 모음 바로가기">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="./m_sub_location.html" title="제주 핫플 모음 바로가기">
+                    <img src="./img/index_img/loc3.png" alt="제주 핫플 모음 바로가기">
+                  </a>
+                </div>
+              <!-- 콘트롤 버튼 -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          </article>
+
+
+
+    <!-- 여행지 리뷰 -->
+    <article class="review_wrapper">
+      <div class="art_title">
+        <h2>여행지 리뷰</h2>
+        <a class="more" href="#" title="인기 여행지 더보기">
+          더보기 <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <ul class="review_wrap">
+        <li>
+          <a href="#" title="리뷰 더보기">
+            <img src="./img/index_img/review1.png" alt="리뷰 더보기">
+            <div>
+              <span class="hashtag">#전주</span>
+              <span class="hashtag">#맛집</span>
+              <h3>스물다섯, 스물하나 촬영지</h3>
+              <p>평소 즐겨보던 드라마에 나왔던 장소
+              를 실제로 방문해보니 너무 좋았고 다음에도 오고 싶습니다</p>
+              <span>조회 999+ <i class="fas fa-heart"></i> 99+</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="리뷰 더보기">
+            <img src="./img/index_img/review2.png" alt="리뷰 더보기">
+            <div>
+              <span class="hashtag">#관광</span>
+              <span class="hashtag">#드라마촬영지</span>
+              <h3>백일의 낭군님 촬영지, 엑소 멤버 출연</h3>
+              <p>가을에 꼭 가봐야 할 낙안읍성 민속마
+              을 드라마 촬영장으로 이용되기도 했습니다</p>
+              <span>조회 999+ <i class="fas fa-heart"></i> 99+</span>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="리뷰 더보기">
+            <img src="./img/index_img/review3.png" alt="리뷰 더보기">
+            <div>
+              <span class="hashtag">#킹덤</span>
+              <span class="hashtag">#한옥</span>
+              <h3>포천 비둘기낭 (영화 킹덤 촬영지)</h3>
+              <p>서울에서 2시간이면 도착하는 '킹덤!
+              촬영지 ! 생각보다 가까워서 다녀오기 좋았어요</p>
+              <span>조회 999+ <i class="fas fa-heart"></i> 99+</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+    </article>
+
+    <br><br><br><br><br>
+
+  </main>
+
+
+
+
+
+
+
+
+  <!-- 하단 내비게이션 -->
+  <footer>
+    <ul class="f_lnb">
+      <li>   
+        <a href="#" title="홈">
+          <i class="fas fa-home"><span>HOME</span></i>
+        </a>
+      </li>
+      <li>   
+        <a href="#" title="검색">
+          <i class="fas fa-magnifying-glass"><span>SEARCH</span></i>
+        </a>
+      </li>
+      <li>   
+        <a href="#" title="플러스">
+          <i class="fas fa-circle-plus"></i>
+        </a>
+      </li>
+      <li>   
+        <a href="#" title="찜">
+          <i class="fas fa-heart"><span>LIKE</span></i>
+        </a>
+      </li>
+      <li>   
+        <a href="mb_mypage.html" title="마이">
+          <i class="fas fa-user-large"><span>MY</span></i>
+        </a>
+      </li>
+    </ul>
+
+  <!-- TOP 버튼 -->
+  <a class="t_btn" href="#" title="맨 위로 가기">
+    <img src="./img/index_img/icon_top.png" alt="맨 위로 가기">
+  </a>
+
+  </footer>
+
+  <script src="./script/swiper.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper1",{
+      spaceBetween:0,
+      effect:"fade",
+      centerSlide:true,
+      // autoplay:{
+      //   delay:3000,
+      //   disableOnInteraction:false,
+      // },
+      pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+      },
+    });
+
+    var swiper = new Swiper(".mySwiper",{
+      spaceBetween:0,
+      effect:"fade",
+      centerSlide:true,
+      autoplay:{
+        delay:2500,
+        disableOnInteraction:false,
+      },
+      pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+      },
+    });
+  </script>
+  
+</body>
+</html>

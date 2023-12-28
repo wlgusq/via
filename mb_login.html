@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIA</title>
+  <!-- 1. 초기화 -->
+<link rel="stylesheet" href="./css/reset.css" type="text/css">
+<!-- 2. 공통 서식 -->
+<link rel="stylesheet" href="./css/base.css" type="text/css">
+
+<!-- 4. 로그인 서식 -->
+<link rel="stylesheet" href="./css/mb_login.css" type="text/css">
+
+</head>
+<body>
+
+<div class="top">
+<h2>로그인</h2>
+<a href="mb_intro.html" title="인트로 페이지 바로가기" class="back_btn">
+  <img src="./img/login_img/back_btn.png" alt="뒤로가기">
+</a>
+</div>
+
+
+<div class="login_wrap">
+  <div class="login_inner">
+  <!-- 로그인 폼 -->
+<!-- <form action="login.php" name="로그인" method="post">
+  <ul>
+    <li><input type="text" placeholder="아이디" maxlength="16"></li>
+    <li><input type="text" placeholder="비밀번호" maxlength="16"></li>
+    <li><a href="mb_index.html" title="메인화면 바로가기"><input type="submit" value="로그인"></a></li>
+  </ul>
+</form> -->
+
+<form action="login.php" method="post" name="로그인" >
+  <fieldset>
+    <legend>로그인</legend>
+    <ul>
+      <li><input type="text" placeholder=" 아이디" maxlength="16" required></li>
+      <li><input type="text" placeholder=" 비밀번호" maxlength="16" required></li>
+      <!-- <li>
+        <a href="mb_index.html" title="메인화면 바로가기">
+          <input type="submit" value="로그인">
+        </a>
+      </li> -->
+      <li>
+        <a href="mb_index.html" title="메인화면 바로가기">
+          로그인
+        </a>
+      </li>
+    </ul>
+  </fieldset>
+</form>
+
+<div class="login_option">
+<!-- 자동 로그인 -->
+  <span class="auto_login">
+    <input type="checkbox" id="auto">
+    <label for="auto" class="auto">
+      <div class="btn_wrap">
+        <span class="btn_inner">&nbsp;</span>
+    </div>
+    자동로그인
+  </span>
+    
+
+  <!-- 비밀번호  찾기 -->
+  <span class="find_pw">
+    <a href="find_pw.html" title="비밀번호 찾기 페이지">비밀번호 찾기</a>
+  </span>
+</div>
+
+
+<!-- 간편 로그인 -->
+  <div class="simple_login">
+    <p><span class="l_line">&nbsp;</span> 간편 로그인<span class="r_line">&nbsp;</span> </p>
+    <ul>
+      <li>
+        <a href="naver.html" title="네이버 간편 로그인">
+          <img src="./img/login_img/m_naver.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="google.html" title="구글 간편 로그인">
+          <img src="./img/login_img/m_google.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="imstagram.html" title="인스타그램 간편 로그인">
+          <img src="./img/login_img/m_insta.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="apple.html" title="애플 간편 로그인">
+          <img src="./img/login_img/m_apple.png" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</body>
+</html>

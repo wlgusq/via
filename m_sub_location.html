@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIA_서브_강릉 주문진</title>
+  <!-- 1. 여백초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 2. 공통서식 (메인, 서브, 로그인, 회원가입)-->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <!-- 3. 레이아웃--> 
+  <link href="./css/mb_layout.css" rel="stylesheet" type="text/css">
+  <!-- 4. 서브 페이지 서식 -->
+  <link href="./css/m_sub_location.css" rel="stylesheet" type="text/css">
+  <!-- 5. 아이콘폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- 6. 스와이퍼 슬라이드 -->
+  <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+  <!-- 7. 제이쿼리 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+          $(document).ready(function(){
+  
+            $(window).scroll(function(){
+              let sPos = $(this).scrollTop();
+  
+              if(sPos >=300){
+                $('.t_btn').fadeIn();
+              }else{
+                $('.t_btn').fadeOut();
+              }
+  
+            });
+  
+            $('.t_btn').click(function(){
+              $('html, body').animate({scrollTop:'0px'},300);
+              return false;
+            });
+  
+          });
+        </script>
+
+</head>
+<body>
+  <!-- 1. 상단헤더영역 -->
+  <header>
+    <div>
+      <a href="./mb_index.html" title="뒤로가기" class="back_btn"><i class="fa-solid fa-angle-left"></i></a>
+      <a href="#" title="뒤로가기" class="menu_btn"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+    </div>
+  </header>
+
+  <!-- 2. 메인콘텐츠영역 -->
+  <main>
+    <h2>지역별 국내여행</h2>
+    <p>다양한 맛집과 여행 정보를 알아보세요!</p><br>
+    <div class="container">
+      <section class="section" id="section-3">
+          <h1 style="display: none;">오시는 길</h1>
+          <div id="map" style="width: 92%; height: 600px; margin:auto"></div>
+          <code id="snippet" class="snippet"></code>
+      </section>
+    </div>
+    
+    <!-- 각자 발급받은 Client ID 값 넣기 -->
+    <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=eo18580lon"></script>
+        <script id="code">
+          var mapDiv = document.getElementById('map');
+          var map = new naver.maps.Map(mapDiv);
+    </script>
+    
+    <h3 class="t_look"><i class="fa-solid fa-circle"></i>근처 맛집 추천해드려요!</h3>
+
+    
+    <div class="b_wrap">
+      <div class="b_near">
+        <div>
+          <a href="m_sub_location_1" title="맛집1"><img src="./img/sub_img/sub_location/p1.jpg" alt="해랑횟집"></a>
+        </div>
+        <div class="t_near">
+          <h3>해랑횟집</h3>
+          <div>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+          </div>
+          <p style="color: #777777;">회전문점</p>
+        </div>
+      </div>
+  
+      <div class="b_near">
+        <div>
+          <a href="m_sub_location_1" title="맛집2"><img src="./img/sub_img/sub_location/p2.jpg" alt="토박이해물"></a>
+        </div>
+        <div class="t_near">
+          <h3>토박이해물</h3>
+          <div>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-regular fa-star star"></i>
+          </div>
+          <p style="color: #777777;">음식점</p>
+        </div>
+      </div>
+  
+      <div class="b_near">
+        <div>
+          <a href="m_sub_location_1" title="맛집3"><img src="./img/sub_img/sub_location/p3.jpg" alt="오드커피"></a>
+        </div>
+        <div class="t_near">
+          <h3>오드커피</h3>
+          <div>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+          </div>
+          <p style="color: #777777;">카페</p>
+        </div>
+      </div>
+  
+      <div class="b_near">
+        <div>
+          <a href="m_sub_location_1" title="맛집4"><img src="./img/sub_img/sub_location/p4.jpg" alt="빅픽처6"></a>
+        </div>
+        <div class="t_near">
+          <h3>빅픽처6</h3>
+          <div>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+            <i class="fa-regular fa-star star"></i>
+          </div>
+          <p style="color: #777777;">음식점</p>
+        </div>
+      </div>
+  
+      <div class="b_near">
+        <div>
+          <a href="m_sub_location_1" title="맛집5"><img src="./img/sub_img/sub_location/p5.jpg" alt="교향면옥"></a>
+        </div>
+        <div class="t_near">
+          <h3>교향면옥</h3>
+          <div>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+            <i class="fa-regular fa-star star"></i>
+          </div>
+          <p style="color: #777777;">음식점</p>
+        </div>
+      </div>
+  
+      <div class="b_near">
+        <div>
+          <a href="m_sub_location_6" title="맛집6"><img src="./img/sub_img/sub_location/p6.jpg" alt="남북면옥"></a>
+        </div>
+        <div class="t_near">
+          <h3>남북면옥</h3>
+          <div>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+            <i class="fa-regular fa-star star"></i>
+          </div>
+          <p style="color: #777777;">음식점</p>
+        </div>
+      </div>
+      <input type="button" value="더보기&nbsp; >" class="button">
+    </div>
+    
+
+  </main>
+
+  <!-- 3. 푸터영역 -->
+
+    <!-- 하단 내비게이션 -->
+    <footer>
+      <ul class="f_lnb">
+        <li>   
+          <a href="mb_index.html" title="홈">
+            <i class="fas fa-home"><span>HOME</span></i>
+          </a>
+        </li>
+        <li>   
+          <a href="#" title="검색">
+            <i class="fas fa-magnifying-glass"><span>SEARCH</span></i>
+          </a>
+        </li>
+        <li>   
+          <a href="#" title="플러스">
+            <i class="fas fa-circle-plus"></i>
+          </a>
+        </li>
+        <li>   
+          <a href="#" title="찜">
+            <i class="fas fa-heart"><span>LIKE</span></i>
+          </a>
+        </li>
+        <li>   
+          <a href="#" title="마이">
+            <i class="fas fa-user-large"><span>MY</span></i>
+          </a>
+        </li>
+      </ul>
+  
+    <!-- TOP 버튼 -->
+    <a class="t_btn" href="#" title="맨 위로 가기">
+      <img src="./img/index_img/icon_top.png" alt="맨 위로 가기">
+    </a>
+  
+  </footer>
+</body>
+</html>

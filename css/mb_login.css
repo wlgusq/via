@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/* 로그인 서식 */
+form, label, input{margin: 0px; padding: 0px;}
+ul, li{list-style: none; padding: 0px; margin: 0px;} 
+body, form, fieldset{padding: 0px; margin: 0px;}
+
+body{
+  background-image: url(../img/login_img/intro02.png);
+  background-size: 100%;
+  overflow: hidden;
+}
+
+
+.top{
+  width: 100%;
+  margin: 10% 0;
+  position: relative;
+}
+
+.top > h2{
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.top > a{
+  position: absolute;
+  left: 7%; top: 5%;
+}
+
+/* 밑에 로그인 흰색 부분 */
+.login_wrap{
+  width: 100%; height: 80%;
+  background: rgba(250,250,250,0.7);
+  position: absolute; top: 20%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+form{
+text-align: center;
+padding: 35% 0px 7.5px 0px;
+}
+
+form ul > li:nth-child(2){
+  margin:15px 0px ;
+}
+
+form > fieldset > legend{
+  display: none;
+}
+
+form ul{width: 100%;}
+
+form ul > li > input{
+  width: 61.5%; height: 48px;
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+form ul> li:last-child{
+  margin: 0 auto;
+  width: 62%;
+  background: #97AF8F;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  line-height: 48px;
+}
+
+form ul> li:last-child > a{
+  color: #fff;
+  display: block;
+  height: 50px;
+}
+
+
+/* form ul> li:last-child > a > input{
+  background: #97AF8F;
+  color: #fff;
+  width: 63%; height: 51px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+} */
+
+/* 자동 로그인 */
+.login_option{
+  display: block;
+  width: 61.5%;
+  position: relative;
+  margin: 0px auto;
+}
+
+.auto_login, .find_pw{
+  font-size: 0.8rem;
+}
+
+.auto_login{
+  position: absolute; left: 0px;
+}
+
+.find_pw{
+  position: absolute; right: 0px; 
+  line-height: 20px;
+}
+
+.auto_login > input{
+  display: none;
+}
+
+.auto_login  div{
+  background: #97AF8F;
+  /* border: 1px solid salmon; */
+  display: inline-block;
+  width: 28px; height: 16px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.6) inset;
+  position: relative; top:4px;
+
+}
+
+.auto_login > input:checked div{
+  background: #ccc;
+}
+
+
+.auto_login  div  span{
+  background: #fff;
+  width: 14px; height: 14px;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  right: 1px; top: 1px;
+  transition: 0.3s;
+}
+
+#auto:checked + .auto > .btn_wrap{
+  background: #ccc;
+}
+
+#auto:checked +.auto > .btn_wrap > .btn_inner{
+  right: 13px;
+}
+
+/* 간편 로그인 */
+.simple_login{
+  width: 61.5%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.simple_login > p{
+  font-size: 0.9rem;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.simple_login > ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.simple_login > ul > li{
+  width: 22%;
+}
+
+.simple_login > ul > li img{
+  width: 100%;
+}
+
+.simple_login img{}
+
+
+/* 간편 로그인 옆 밑줄 */
+
+/* .simple_login > p::before{
+  content: "";
+  display: inline-block;
+  width:32%; height: 1px;
+  background-color: #333;
+  margin-right: 5%;
+}
+
+.simple_login > p::after{
+  content: "";
+  display: inline-block;
+  width:32%; height: 1px;
+  background-color: #333;
+  margin-left: 5%;
+} */
+
+.l_line{
+  display:inline-block;
+  width: 30%; height: 1px;
+  background: #666;
+  position: absolute; right: 0px; top: 4px;
+}
+
+.r_line{
+  display:inline-block;
+  width: 30%; height: 1px;
+  background: #666;
+  position: absolute; left: 0px; top: 4px;
+}

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIA_Sub_K-콘텐츠여행_</title>
+  <!-- 1. 여백초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 2. 공통서식 (메인, 서브, 로그인, 회원가입)-->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <!-- 3. 레이아웃--> 
+  <link href="./css/mb_layout.css" rel="stylesheet" type="text/css">
+  <!-- 4. 서브 페이지 서식 -->
+  <link href="./css/m_sub_main.css" rel="stylesheet" type="text/css">
+  <!-- 5. 아이콘폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- 6. 스와이퍼 슬라이드 -->
+  <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+  <!-- 7. 제이쿼리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+          $(document).ready(function(){
+  
+            $(window).scroll(function(){
+              let sPos = $(this).scrollTop();
+  
+              if(sPos >=300){
+                $('.t_btn').fadeIn();
+              }else{
+                $('.t_btn').fadeOut();
+              }
+  
+            });
+  
+            $('.t_btn').click(function(){
+              $('html, body').animate({scrollTop:'0px'},300);
+              return false;
+            });
+  
+          });
+        </script>
+
+</head>
+<body>
+  <!-- 1. 상단헤더영역 -->
+  <header>
+    <div>
+      <a href="./mb_index.html" title="뒤로가기" class="back_btn"><i class="fa-solid fa-angle-left"></i></a>
+      <a href="#" title="뒤로가기" class="menu_btn"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+    </div>
+  </header>
+
+  <!-- 2. 메인콘텐츠영역 -->
+  <main>
+    <h2>K-콘텐츠여행</h2>
+    <p>K-콘텐츠에 나왔던 유명 촬영지를 그대로 여행해보세요!</p>
+
+    <!-- 장르별 보기 - 드라마 -->
+    <h3 class="t_look"><i class="fa-solid fa-circle"></i>장르별 보기 - 드라마</h3>
+    <div>
+      <article class="slide">
+        <h2 style="display: none;">슬라이드</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p1.jpg" alt="슬라이드1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p2.jpg" alt="슬라이드2">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p3.jpg" alt="슬라이드3">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p4.jpg" alt="슬라이드4">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p5.jpg" alt="슬라이드5">
+            </div>
+            <div class="swiper-slide">
+              <a href="m_sub_drama" title="드라마 페이지로 이동"><img src="./img/sub_img/sub_main/p_plus.png" alt="더보기"></a>
+            </div>
+          </div>
+          <!-- 콘트롤 버튼 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+    </div>
+    <input id="check-btn1" type="checkbox">
+    <label for="check-btn1" class="more_btn"><i class="fa-solid fa-plus"></i></label>
+
+
+    <ul class="total total1"> 
+      <li>
+        <a href="./m_sub_drama_1.html" title="그 해 우리는">
+          <img src="./img/sub_img/sub_main/drama01.png" alt="그 해 우리는 미리보기">
+          <div class="caption">
+            <p>우리가 헤어진 건 다 내 오만이었어<br>너 없이 살 수 있을 거라는 내 오만</p>
+            <p class="a_title">그 해 우리는</p>
+            <span class="location">수원 행궁동</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_drama_1.html" title="스물다섯 스물하나">
+          <img src="./img/sub_img/sub_main/drama02.png" alt="스물다섯 스물하나">
+          <div class="caption">
+            <p>네가 어디에 있든, <br>네가 있는 곳에 내 응원이 닿게 할게
+              <br>내가 가서 닿을게, 그때 보자</p>
+            <p class="a_title">스물다섯 스물하나</p>
+            <span class="location">수원 행리단길</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_drama_1.html" title="리틀포레스트">
+          <img src="./img/sub_img/sub_main/drama03.png" alt="리틀포레스트">
+          <div class="caption">
+            <p>온기가 있는 생명은<br>다 의지가 되는 법이야</p>
+            <p class="a_title">리틀포레스트</p>
+            <span class="location">경상북도 군위</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_drama_1.html" title="건축학개론">
+          <img src="./img/sub_img/sub_main/drama04.png" alt="건축학개론">
+          <div class="caption">
+            <p>첫사랑이 잘 안되니까 첫사랑이지,<br>잘되면 그게 첫사랑이냐?</p>
+            <p class="a_title">건축학개론</p>
+            <span class="location">제주 서연의 집</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_drama_1.html" title="도깨비">
+          <img src="./img/sub_img/sub_main/drama05.png" alt="도깨비">
+          <div class="caption">
+            <p>날이 좋아서, 날이 좋지. 않아서,<br> 날이 적당해서 모든 날이 좋았다</p>
+            <p class="a_title">도깨비</p>
+            <span class="location">강릉 주문진</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_drama_1.html" title="사랑의 불시착">
+          <img src="./img/sub_img/sub_main/drama06.png" alt="사랑의 불시착">
+          <div class="caption">
+            <p>우리 내일 만날 것처럼 오늘을 사는게 어떻갔소?<br>
+              기쁘게 살아보는게 어떻갔소?</p>
+            <p class="a_title">사랑의 불시착</p>
+            <span class="location">충북 충주시</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_drama_1.html" title="더글로리">
+          <img src="./img/sub_img/sub_main/drama07.png" alt="더글로리">
+          <div class="caption">
+            <p>오늘부터 내꿈은 너야<br> 우리 꼭, 또 보자 박연진</p>
+            <p class="a_title">더글로리</p>
+            <span class="location">충북 청주시</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_drama_1.html" title="호텔델루나">
+          <img src="./img/sub_img/sub_main/drama08.png" alt="호텔델루나">
+          <div class="caption">
+            <p>난 좀 슬퍼졌어, 아까 보던 바다보다<br>지금 보는 바다가 예뻐져서</p>
+            <p class="a_title">호텔델루나</p>
+            <span class="location">부여 성흥산성</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+
+    <!-- 장르별 보기 - 영화 -->
+    <h3 class="t_look"><i class="fa-solid fa-circle"></i>장르별 보기 - 영화</h3>
+    <div>
+      <article class="slide">
+        <h2 style="display: none;">슬라이드</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p11.png" alt="슬라이드1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p22.png" alt="슬라이드2">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p33.png" alt="슬라이드3">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p44.png" alt="슬라이드4">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p55.png" alt="슬라이드5">
+            </div>
+            <div class="swiper-slide">
+              <a href="m_sub_drama" title="드라마 페이지로 이동"><img src="./img/sub_img/sub_main/p_plus.png" alt="더보기"></a>
+            </div>
+          </div>
+          <!-- 콘트롤 버튼 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+    </div>
+    
+    <input id="check-btn2" type="checkbox">
+    <label for="check-btn2" class="more_btn"><i class="fa-solid fa-plus"></i></label>
+
+
+    <ul class="total total2"> 
+      <li>
+        <a href="./m_sub_drama_1.html" title="범죄도시3">
+          <img src="./img/sub_img/sub_main/movie01.PNG" alt="범죄도시3">
+          <div class="caption">
+            <p>진실의 방 청소하자</p>
+            <p class="a_title">범죄도시3</p>
+            <span class="location">서울 종로</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_drama_1.html" title="신과함께">
+          <img src="./img/sub_img/sub_main/movie02.png" alt="신과함께">
+          <div class="caption">
+            <p>아무리 고통스러운 기억도, 지금 김자홍 씨처럼 저승 와서 말할 때 보면 다 예쁜 추억이 되어있어요</p>
+            <p class="a_title">신과함께</p>
+            <span class="location">흑석 뉴타운</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_drama_1.html" title="남자가 사랑할 때">
+          <img src="./img/sub_img/sub_main/movie03.png" alt="남자가 사랑할 때">
+          <div class="caption">
+            <p>눈 앞에 아른거리고 자꾸 생각나면<br>그게 사랑 아니냐?</p>
+            <p class="a_title">남자가 사랑할 때</p>
+            <span class="location">경암동 철길마을</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_drama_1.html" title="기생충">
+          <img src="./img/sub_img/sub_main/movie04.jpg" alt="기생충">
+          <div class="caption">
+            <p>38선 아래로는 골목까지 훤합니다</p>
+            <p class="a_title">"기생충</p>
+            <span class="location">서울특별시</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_drama_1.html" title="신의한수">
+          <img src="./img/sub_img/sub_main/movie05.jpg" alt="신의한수">
+          <div class="caption">
+            <p>세상은 고수들에겐 놀이터요,<br>하수들에겐 생지옥이 아닌가</p>
+            <p class="a_title">신의한수</p>
+            <span class="location">부산 주물공장</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+
+    <!-- 장르별 보기 - 음악 -->
+    <h3 class="t_look"><i class="fa-solid fa-circle"></i>장르별 보기 - 음악</h3>
+    <div>
+      <article class="slide">
+        <h2 style="display: none;">슬라이드</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p111.jpg" alt="슬라이드1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p222.jpg" alt="슬라이드2">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p333.jpg" alt="슬라이드3">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p444.jpg" alt="슬라이드4">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_main/p555.png" alt="슬라이드5">
+            </div>
+            <div class="swiper-slide">
+              <a href="m_sub_drama_1.html" title="드라마 페이지로 이동"><img src="./img/sub_img/sub_main/p_plus.png" alt="더보기"></a>
+            </div>
+          </div>
+          <!-- 콘트롤 버튼 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+    </div>
+    
+    <input id="check-btn3" type="checkbox">
+    <label for="check-btn3" class="more_btn"><i class="fa-solid fa-plus"></i></label>
+
+
+    <ul class="total total3"> 
+      <li>
+        <a href="./m_sub_music_1.html" title="봄날">
+          <img src="./img/sub_img/sub_main/music01.png" alt="봄날 미리보기">
+          <div class="caption">
+            <p>방탄소년단</p>
+            <p class="a_title">봄날</p>
+            <span class="location">양주 일영역</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_music_2.html" title="디토/오엠지">
+          <img src="./img/sub_img/sub_main/music02.png" alt="ditto/OMG 미리보기">          
+          <div class="caption">
+            <p>뉴진스</p>
+            <p class="a_title">ditto, OMG</p>
+            <span class="location">계성중학교</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_music_2.html" title="SPIN OFF">
+          <img src="./img/sub_img/sub_main/music03.png" alt="SPIN OFF 미리보기">          
+          <div class="caption">
+            <p>업텐션</p>
+            <p class="a_title">SPIN OFF</p>
+            <span class="location">인천 파라다이스</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_music_2.html" title="LMM">
+          <img src="./img/sub_img/sub_main/music04.jpg" alt="LMM 미리보기">          
+          <div class="caption">
+            <p>화사</p>
+            <p class="a_title">LMM</p>
+            <span class="location">울릉도 나리분지</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="./m_sub_music_2.html" title="러브 유어셀프 전 티어">
+          <img src="./img/sub_img/sub_main/music05.jpg" alt="러브 유어셀프 전 티어">          
+          <div class="caption">
+            <p>방탄소년단</p>
+            <p class="a_title">러브 유어셀프 전 티어</p>
+            <span class="location">새만금 간척지</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <!-- 3. 푸터영역 -->
+  <!-- 하단 내비게이션 -->
+  <footer>
+    <ul class="f_lnb">
+      <li>   
+        <a href="mb_index.html" title="홈">
+          <i class="fas fa-home"><span>HOME</span></i>
+        </a>
+      </li>
+      <li>   
+        <a href="#" title="검색">
+          <i class="fas fa-magnifying-glass"><span>SEARCH</span></i>
+        </a>
+      </li>
+      <li>   
+        <a href="#" title="플러스">
+          <i class="fas fa-circle-plus"></i>
+        </a>
+      </li>
+      <li>   
+        <a href="#" title="찜">
+          <i class="fas fa-heart"><span>LIKE</span></i>
+        </a>
+      </li>
+      <li>   
+        <a href="#" title="마이">
+          <i class="fas fa-user-large"><span>MY</span></i>
+        </a>
+      </li>
+    </ul>
+
+  <!-- TOP 버튼 -->
+  <a class="t_btn" href="#" title="맨 위로 가기">
+    <img src="./img/index_img/icon_top.png" alt="맨 위로 가기">
+  </a>
+
+</footer>
+
+
+  <!-- 스크립트 -->
+  <script src="./script/swiper.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper",{
+      spaceBetween:0,
+      effect:"fade",
+      centerSlide:true,
+      autoplay:{
+        delay:2500,
+        disableOnInteraction:false,
+      },
+      pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+      },
+    });
+  </script>
+</body>
+</html>

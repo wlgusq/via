@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+/* 회원가입 2페이지 서식 */
+
+form, label, input{margin: 0px; padding: 0px;}
+ul, li{list-style: none; padding: 0px; margin: 0px;} 
+body, form, fieldset{padding: 0px; margin: 0px;}
+
+
+body{
+  background: #FFFCF8;
+}
+
+main{
+  position: relative;
+}
+.top{
+  width: 100%;
+  margin: 10% 0;
+  position: relative;
+
+}
+
+.top > h2{
+  font-size: 2rem;
+  text-align: center;
+  line-height: 100%;
+  font-weight: 500;
+}
+
+.top > a{
+position: absolute;
+left: 7%; top: 5%;
+}
+
+.top > a > img{
+  width: 40%;
+  }
+
+  fieldset{
+    border: none;
+    text-align: center;
+  }
+
+  /* 폼태그 */
+form div{
+  width: 100%; margin: 0 auto;
+}
+
+form .profile_img{
+  padding-bottom: 40%;
+}
+
+.user_man, .user_women{
+  width: 35%;
+  position: absolute;
+  left: 32.5%;
+} 
+.user_women{
+  display: none;
+}
+
+/* 성별 선택시 기본 이미지 바뀌게 */
+#gender01:checked ~ .profile_img .user_man{
+  display: block;
+}
+
+#gender02:checked ~ .profile_img .user_women{
+  display: block;
+}
+
+/* 라디오 버튼 숨기기 */
+input[type=radio]{display: none;}
+
+
+
+/* input 공통 서식 */
+/* li.txt_form > input{
+  width: 60.8%; height: 46px;
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem
+} */
+
+
+
+form > fieldset > div{
+  padding: 2% 0;
+}
+
+
+.name_box > ul .gender_choice > ul .phone_box > ul{
+  width: 100%;
+}
+
+/* 이름 */
+.name_box > ul > li:first-child{
+  width: 62%;
+  line-height: 30px;
+  font-size: 0.9rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.name_box > ul > li:last-child > input{
+  width: 61.5%; height: 48px;
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* 성별 */
+
+.gender_choice > .gen_txt{
+  width: 62%;
+  margin: 0 auto;
+  text-align: left;
+  display: block;
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+.gender_choice > ul {
+  display: flex;
+    margin: 0 auto;
+    width: 61.2%;
+}
+
+.gender_choice > ul > li{
+  width: 50%; 
+}
+
+.gender_choice > ul > li > label{
+  border: 1px solid #ccc;
+  background: #f6f6f6; 
+  display: inline-block;
+  line-height: 48px;
+  width: 100%; height: 48px;
+  font-size: 0.9rem;
+}
+
+.gender_choice > ul > li:first-child > label{
+  border-radius: 5px 0 0 5px;
+}
+.gender_choice > ul > li:last-child > label{
+  border-radius: 0 5px 5px 0;
+}
+
+/* 성별 체크시 체크된 버튼 컬러 바꾸기 */
+#gender01:checked ~ .gender_choice li:first-child label{
+  background: #97AF8F;
+  color: #fff;
+}
+
+#gender02:checked ~ .gender_choice li:last-child label{
+  background: #97AF8F;
+  color: #fff;
+}
+
+/* 전화번호 */
+.phone_box  > ul > li:first-child{
+  width: 62%;
+  line-height: 30px;
+  font-size: 0.9rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.phone_box  > ul > li:last-child > input{
+  width: 61.5%; height: 48px;
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* 시작하기 버튼 */
+
+.submit_box{
+  margin-top: 20px;
+}
+
+.submit_box > a{
+  display: inline-block;
+  font-size: 1rem;
+  background: #97AF8F;
+  color: #fff;
+  text-decoration: none;
+  width: 62%; height: 50px;
+  line-height: 48px;
+  border-radius: 5px;
+}
+
+

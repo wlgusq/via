@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/* header 영역 */
+header{
+  width: 100%;
+  height: 60px; 
+  background: #fff;
+  position: fixed;
+  left: 0px; top: 0px;
+  z-index: 1000;
+  border-bottom: 0.0625em solid #ddd;
+}
+.back_btn{
+  margin: 17px 0 0 30px ;
+  float: left;
+}
+.fa-angle-left{
+  margin: 2px;
+  font-size: 25px;
+}
+.menu_btn{
+  margin: 15px 30px 0px 0px ;
+  float: right;
+}
+.fa-ellipsis-vertical{
+  margin: 2px;
+  font-size: 25px;
+}
+
+
+/* main 영역 */
+main{
+  text-align: center;
+  padding-top: 80px;
+  margin: 0px auto;
+  line-height: 40px;
+  padding-bottom: 9.25em;
+}
+
+/* 첫번째 컨텐츠 슬라이드 */
+.slide{
+  position: relative;
+}
+.slide img{
+  width: 90%;
+  height: 100%;
+  border-radius: 3%;
+}
+
+
+.mySwiper .swiper-wrapper{
+  position: relative;}
+
+h2{
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.txt01{
+  font-size: 1em;
+  padding-bottom: 3.9em;
+}
+.t_look{
+  font-size: 1.3em;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 1.75em;
+  padding-bottom: 15px;
+}
+.t_look .fa-circle{
+  color: #FFD500;
+  position: absolute;
+  left: 1.3em;
+  z-index: -10;
+}
+
+/* 두번째 컨텐츠(그 해 우리는 여행지 둘러보기) */
+.drama_wrap{
+  width: 90%; height: 200px;
+  margin: 0px auto;
+  position: relative;
+  
+}
+.drama_wrap2{
+  float: left;
+}
+.drama_wrap2 img{
+  width: 11.125em;
+  height: 11.125em;
+  border-radius: 5%;
+  margin-right: 0.75em;
+}
+.drama_wrap3{
+  padding-left: 50px;
+  text-align: left;
+  margin: 5px 0px;
+  line-height: 1.3em;
+}
+.drama_wrap3 li{
+  font-size: 0.75em;
+}
+.star{
+  color: #FFD500;
+}
+
+.t_location{
+  color: #959595;
+  padding-top: 2px;
+}
+
+.fa-heart{color: #f00;}
+
+#check-btn{
+  display: none;
+}
+#check-btn:checked ~ .plus_btn{display: block;} 
+#check-btn:checked + .more_btn{display:none;}
+
+.plus_btn{display: none;}
+
+/* 세번째 컨텐츠(그 해 우리는 명장면 다시보기) */
+.b_replay{
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.t_replay{
+  width: 70%;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: left;
+  padding-top: 4.25em;
+  padding-left: 1.75em;
+  margin-bottom: 15px;
+}
+.t_replay .fa-circle{
+  color: #FFD500;
+  position: absolute;
+  left: 1.3em;
+  z-index: -10;
+}
+.t_plus{
+  width: 30%;
+  font-size: 0.8em;
+  padding-top: 7em;
+  padding-right: 4em;
+  text-align: right;
+}
+
+.youtube{
+  text-align: center;
+  margin: 0 auto;
+}
+.url_btn{
+  font-size: 8px;
+}
+.t_txt{
+  height: 5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+}
+iframe {
+	border-radius: 0.8rem;
+  width: 80%; 
+}

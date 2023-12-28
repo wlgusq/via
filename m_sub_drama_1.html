@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIA_Sub_DRAMA_그 해 우리는</title>
+  <!-- 1. 여백초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 2. 공통서식 (메인, 서브, 로그인, 회원가입)-->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <!-- 3. 레이아웃--> 
+  <link href="./css/mb_layout.css" rel="stylesheet" type="text/css">
+  <!-- 4. 서브 페이지 서식 -->
+  <link href="./css/m_sub_drama_1.css" rel="stylesheet" type="text/css">
+  <!-- 5. 아이콘폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- 6. 스와이퍼 슬라이드 -->
+  <link href="./css/swiper.css" rel="stylesheet" type="text/css">
+  <!-- 7. 제이쿼리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+          $(document).ready(function(){
+  
+            $(window).scroll(function(){
+              let sPos = $(this).scrollTop();
+  
+              if(sPos >=300){
+                $('.t_btn').fadeIn();
+              }else{
+                $('.t_btn').fadeOut();
+              }
+  
+            });
+  
+            $('.t_btn').click(function(){
+              $('html, body').animate({scrollTop:'0px'},300);
+              return false;
+            });
+  
+          });
+        </script>
+
+
+</head>
+<body>
+  <!-- 1. 상단헤더영역 -->
+  <header>
+    <div>
+      <a href="./mb_index.html" title="뒤로가기" class="back_btn"><i class="fa-solid fa-angle-left"></i></a>
+      <a href="#" title="뒤로가기" class="menu_btn"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+    </div>
+  </header>
+
+
+  <!-- 2. 메인콘텐츠영역 -->
+
+  <!-- 첫번째 컨텐츠 슬라이드 -->
+  <main>
+    <div>
+      <article class="slide">
+        <h2 style="display: none;">그 해 우리는 슬라이드</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_drama_1/1_1.jpg" alt="슬라이드1">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_drama_1/1_2.jpg" alt="슬라이드2">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_drama_1/1_3.jpg" alt="슬라이드3">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_drama_1/1_4.jpg" alt="슬라이드4">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_drama_1/1_5.jpg" alt="슬라이드5">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_drama_1/1_6.jpg" alt="슬라이드6">
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/sub_img/sub_drama_1/1_7.jpg" alt="슬라이드7">
+            </div>
+          </div>
+          <!-- 콘트롤 버튼 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+    </div>
+    <h2>드라마 여행</h2>
+    <p class="txt01">인기 드라마 "그 해 우리는"<br>속 유명 촬영지를 그대로 여행해보세요!</p>
+
+
+    <!-- 두번째 컨텐츠(그 해 우리는 여행지 둘러보기) -->
+
+    <h3 class="t_look"><i class="fa-solid fa-circle"></i>그 해 우리는 여행지 둘러보기</h3>
+    <div class="drama_wrap">
+      <a href="./m_location.html" title="지동벽화마을 더보기">
+        <div class="drama_wrap2">
+          <img src="./img/sub_img/sub_drama_1/location01.png" alt="지동벽화마을">
+        </div>
+        <ul class="drama_wrap3">
+          <li style="font-size: 1em;">지동벽화마을</li>
+          <li>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i> 999+
+            <i class="fa-solid fa-heart"></i> 999+
+          </li>
+          <li class="t_location">
+            <i class="fa-solid fa-location-dot"></i> 
+            경기도 수원시 팔달구 지동 271-156
+          </li>
+          <li class="t_txt">지동벽화마을은 수원 팔달구의 행궁동 우측에 있는 하나의 마을인 지동에 위치하고 있다. 수원화성 담을 따라 평탄한 길로 올라가다 보면 지동이 나오게 되는데 대부분의 골목마다 벽화를 볼 수 있어 구경거리가 많다.</li>
+        </ul>
+      </a>
+    </div>
+
+    <div class="drama_wrap">
+      <a href="./m_location.html" title="오이도 박물관 더보기">
+        <div class="drama_wrap2">
+          <img src="./img/sub_img/sub_drama_1/location02.png" alt="오이도 박물관">
+        </div>
+        <ul class="drama_wrap3">
+          <li style="font-size: 1em;">오이도박물관</li>
+          <li>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+            <i class="fa-regular fa-star"></i> 999+
+            <i class="fa-solid fa-heart"></i> 999+
+          </li>
+          <li class="t_location">
+            <i class="fa-solid fa-location-dot"></i> 
+            경기도 시흥시 오이도로 332
+          </li>
+          <li class="t_txt">오이도는 서해안 최대 패총유적지이자 다양한 신석기시대 유물의 출토지로, 선사시대 해안생활문화유산으로서 보존가치를 인정받는 곳이다. 이러한 오이도 유적을 보호하고 활용하기 위해 2019년 시흥오이도박물관이 조성되었다.</li>
+        </ul>
+      </a>
+    </div>
+
+    <div class="drama_wrap">
+      <a href="./m_location.html" title="온빛자연휴양림 더보기">
+        <div class="drama_wrap2">
+          <img src="./img/sub_img/sub_drama_1/location03.png" alt="온빛자연휴양림">
+        </div>
+        <ul class="drama_wrap3">
+          <li style="font-size: 1em;">온빛자연휴양림</li>
+          <li>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star star"></i>
+            <i class="fa-solid fa-star-half-stroke star"></i>
+            <i class="fa-regular fa-star"></i> 999+
+            <i class="fa-solid fa-heart"></i> 999+
+          </li>
+          <li class="t_location">
+            <i class="fa-solid fa-location-dot"></i> 
+            충남 논산시 벌곡면 황룡재로 480-113
+          </li>
+          <li class="t_txt">온빛자연휴양림을 걷다 보면 메타세콰이아 숲과 호수가 어우러져 이국적인 풍경을 볼 수 있다. 여름은 푸르게 가을은 주황빛으로 물든다. 계절별로 아름답게 피어나는 온빛자연휴양림에서 힐링 산책을 즐기길 추천한다.</li>
+        </ul>
+      </a>
+    </div>
+
+    <!-- 더보기 버튼-->
+
+    <input id="check-btn" type="checkbox">
+    <label for="check-btn" class="more_btn">더보기 <i class="fa-solid fa-plus"></i></label>
+      <ul class="plus_btn">
+
+        <li class="drama_wrap">
+          <a href="./m_location.html" title="천북폐목장 청보리밭 더보기">
+            <div class="drama_wrap2">
+              <img src="./img/sub_img/sub_drama_1/location04.png" alt="천북폐목장 청보리밭">
+            </div>
+            <ul class="drama_wrap3">
+              <li style="font-size: 1em;">천북폐목장 청보리밭</li>
+              <li>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i> 999+
+                <i class="fa-solid fa-heart"></i> 999+
+              </li>
+              <li class="t_location">
+                <i class="fa-solid fa-location-dot"></i> 
+                충남 보령시 천북면 천광로 73-22
+              </li>
+              <li class="t_txt">보령시 천북면에 위치한 천북폐목장 청보리밭은 네비게이션에 '천북 신흥교회'로 검색하고 찾아올 수 있다. 드라마 촬영 장소로 사용된 이 폐목장 자리는 개인 사유지로 SNS 상에서 사진 찍기 좋은 곳으로 입소문이 나서 인생사진을 남기러 방문하는 사람이 많아졌다.</li>
+            </ul>
+          </a>
+        </li>
+
+        <li class="drama_wrap">
+          <a href="./m_location.html" title="의정부미술도서관 더보기">
+            <div class="drama_wrap2">
+              <img src="./img/sub_img/sub_drama_1/location05.png" alt="의정부미술도서관">
+            </div>
+            <ul class="drama_wrap3">
+              <li style="font-size: 1em;">의정부미술도서관</li>
+              <li>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i> 999+
+                <i class="fa-solid fa-heart"></i> 999+
+              </li>
+              <li class="t_location">
+                <i class="fa-solid fa-location-dot"></i> 
+                경기도 의정부시 민락로 248
+              </li>
+              <li class="t_txt">기존 도서관의 편견을 깨는 독특한 테마와 매력적인 디자인으로 새로운 명소가 되고 있는 곳이다. 국내 최초의 미술 도서관이 있으며, 음악 도서관은 CD, LP, DVD, 악보 등 비도서 자료가 가득하고, LP청음까지 할 수 있어 예술을 좋아하는 사람들에게 추천한다.</li>
+            </ul>
+          </a>
+        </li>
+      </ul> 
+
+
+    
+    <div class="b_replay">
+      <h3 class="t_replay"><i class="fa-solid fa-circle"></i>그 해 우리는 명장면</h3>
+
+      <div class="t_plus"><a href="m_sub_drama.html" title="그 해 우리는 명장면 다시보기 페이지로 가기">더보기 <b>&#x003E;</b></a></div>
+    </div>
+
+    <article class="youtube">
+      <h3 style="display: none;">유튜브</h3>
+      <iframe src="https://www.youtube.com/embed/aW7D5S2ze3c?si=NOs4fRlVogPBNz0v" 
+      title="YouTube video player" allow="accelerometer; autoplay; 
+      clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen></iframe>
+    </article>
+
+    <a href="https://www.youtube.com/embed/aW7D5S2ze3c?si=NOs4fRlVogPBNz0v" title="영상으로 이동" class="url_btn">출처 : https://www.youtube.com/embed/aW7D5S2ze3c?si=NOs4fRlVogPBNz0v</a>
+  </main>
+
+  <!-- 3. 푸터영역 -->
+
+    <!-- 하단 내비게이션 -->
+  <footer>
+      <ul class="f_lnb">
+        <li>   
+          <a href="mb_index.html" title="홈">
+            <i class="fas fa-home"><span>HOME</span></i>
+          </a>
+        </li>
+        <li>   
+          <a href="#" title="검색">
+            <i class="fas fa-magnifying-glass"><span>SEARCH</span></i>
+          </a>
+        </li>
+        <li>   
+          <a href="#" title="플러스">
+            <i class="fas fa-circle-plus"></i>
+          </a>
+        </li>
+        <li>   
+          <a href="#" title="찜">
+            <i class="fas fa-heart"><span>LIKE</span></i>
+          </a>
+        </li>
+        <li>   
+          <a href="#" title="마이">
+            <i class="fas fa-user-large"><span>MY</span></i>
+          </a>
+        </li>
+      </ul>
+  
+    <!-- TOP 버튼 -->
+    <a class="t_btn" href="#" title="맨 위로 가기">
+      <img src="./img/index_img/icon_top.png" alt="맨 위로 가기">
+    </a>
+  
+  </footer>
+
+
+  <!-- 스크립트 -->
+  <script src="./script/swiper.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper",{
+      spaceBetween:0,
+      effect:"fade",
+      centerSlide:true,
+      autoplay:{
+        delay:2500,
+        disableOnInteraction:false,
+      },
+      pagination:{
+        el:".swiper-pagination",
+        clickable:true,
+      },
+    });
+  </script>
+</body>
+</html>
